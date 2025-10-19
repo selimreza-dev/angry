@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        section {
+            width: 100%;
+            height: 90vh;
+            text-align: center;
+            font-family: "Anek Bangla", sans-serif;
+            font-weight: 800;
+        }
+
+        img {
+            width: 350px;
+            max-width: 100%;
+            animation-name: angry;
+            animation-timing-function: ease-in-out;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .text h1 {
+            font-size: 80px;
+            line-height: 0px;
+
+        }
+
+        .text h2 {
+            font-size: 100px;
+            line-height: 20px;
+        }
+
+
+
+        @keyframes angry {
+            from {
+                transform: translateX(-50%);
+
+            }
+
+            to {
+                transform: translateX(50%);
+
+            }
+        }
+
+        @media (max-width: 992px) {
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text h1 {
+                font-size: 40px;
+            }
+
+            .text h2 {
+                font-size: 50px;
+            }
+
+            .animation-box img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="animation-box">
+            <img src="./abc.png" alt="যাও কোড করতে বসো">
+        </div>
+        <div class="text">
+            <h1>এখানে কি!!!</h1>
+            <h2>যাও কোড করতে বসো</h2>
+        </div>
+    </section>
+</body>
+
+</html>
